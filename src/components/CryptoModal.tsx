@@ -21,7 +21,7 @@ export const CryptoModal = () => {
         <div className="flex flex-col gap-3 mb-5" />
 
         <a
-          href="https://t.me/cynski"
+          href="https://t.me/savslayr"
           className="btn-luxury-primary w-full py-4 rounded-xl text-sm text-center no-underline"
         >
           📨 Message Admin
