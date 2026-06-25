@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroCarousel } from "@/sections/MainContent/components/HeroCarousel";
+import { HeroCarousel } from "@/public/previews/video1.mp4";
 import { PricingSection } from "@/sections/PricingSection";
 import { CommunitySection } from "@/sections/CommunitySection";
 import { HowItWorksSection } from "@/sections/HowItWorksSection";
