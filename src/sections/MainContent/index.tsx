@@ -1,35 +1,62 @@
 import React from "react";
-import { CarouselTrack } from "@/components/CarouselTrack";
-import { CarouselControls } from "@/sections/MainContent/components/CarouselControls";
+import { HeroCarousel } from "@/sections/MainContent/components/HeroCarousel";
+import { PricingSection } from "@/sections/PricingSection";
+import { CommunitySection } from "@/sections/CommunitySection";
+import { HowItWorksSection } from "@/sections/HowItWorksSection";
+import { FaqSection } from "@/sections/FaqSection";
+import { OnlineMembers } from "@/sections/OnlineMembers";
+import { Footer } from "@/sections/Footer";
 
-export const HeroCarousel = () => {
+export const MainContent = () => {
   return (
-    <div className="relative w-full overflow-hidden">
-      <div className="relative max-w-[900px] mx-auto px-3">
-        <div className="relative overflow-hidden rounded-2xl">
-          <CarouselTrack />
+    <main className="relative w-full">
+      {/* ── HERO ── */}
+      <section className="relative flex flex-col items-center justify-center text-center pt-14 pb-4 px-4 overflow-hidden">
+        {/* Decorative left/right vertical gold lines */}
+        <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/25 to-transparent hidden lg:block" />
+        <div className="absolute right-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/25 to-transparent hidden lg:block" />
 
-          <CarouselControls
-            variant="absolute top-3 right-[calc(18%+6px)] z-[7] flex items-center justify-center w-10 h-10"
-            ariaLabel="Toggle sound"
-            buttonText="🔇"
-          />
+        {/* Logo lockup */}
+        <div
+          className="mb-3 animate-fade-up flex flex-col items-center"
+          style={{ animationDelay: "0ms" }}
+        >
+          <div className="logo-text text-[2.2rem] leading-none md:text-[3.6rem] lg:text-[4.5rem] select-none">
+            Lust Playhouse
+          </div>
+          <p className="text-white text-xs tracking-[0.2em] uppercase mt-2 font-sans font-bold">
+            Private Members Club
+          </p>
         </div>
+      </section>
 
-        <CarouselControls
-          variant="absolute left-1.5 top-1/2 -translate-y-1/2 z-[6] flex items-center justify-center w-11 h-11 text-[1.7rem]"
-          ariaLabel="Previous"
-          buttonText="‹"
-        />
+      {/* ── VIDEO PREVIEWS ── */}
+      <section
+        id="preview"
+        className="relative pt-4 pb-8 px-4 w-full overflow-hidden"
+      >
+        <HeroCarousel />
+      </section>
 
-        <CarouselControls
-          variant="absolute right-1.5 top-1/2 -translate-y-1/2 z-[6] flex items-center justify-center w-11 h-11 text-[1.7rem]"
-          ariaLabel="Next"
-          buttonText="›"
-        />
-
-        <CarouselControls variant="indicators" ariaLabel="" buttonText="" />
+      {/* ── Tagline (below carousel, above pricing) ── */}
+      <div className="text-center py-6 px-4">
+        <p className="max-w-lg mx-auto text-base md:text-lg text-white font-bold leading-relaxed">
+          The most exclusive collection of wins on the internet.
+          <br />
+          One payment. Lifetime access. Instant delivery.
+        </p>
       </div>
-    </div>
+
+      {/* ── REMAINING SECTIONS ── */}
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
+        <div id="pricing" className="scroll-mt-8">
+          <PricingSection />
+        </div>
+        <HowItWorksSection />
+        <CommunitySection />
+        <FaqSection />
+        <Footer />
+      </div>
+    </main>
   );
 };
