@@ -1,5 +1,5 @@
 import React from "react";
-import { CarouselTrack } from "@/sections/MainContent/components/CarouselTrack";
+import { CarouselTrack } from "@/public/previews/video1.mp4";
 import { CarouselControls } from "@/sections/MainContent/components/CarouselControls";
 
 export const HeroCarousel = () => {
