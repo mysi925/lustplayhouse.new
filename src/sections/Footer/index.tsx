@@ -14,19 +14,19 @@ export const Footer = () => {
       {/* Links row */}
       <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-white/30 hover:text-white/50 font-sans mb-8">
         <a
-          href="https://t.me/cynski"
+          href="https://t.me/savslayr"
           className="hover:text-gold-300 transition-colors"
         >
-          Support
+          Contact
         </a>
         <a
-          href="https://t.me/+Q2cSul0OxOs1ODhh"
+          href="https://t.me/+FZv49DSqQ_lmODcx"
           className="hover:text-gold-300 transition-colors"
         >
           Free Channel
         </a>
         <a
-          href="https://t.me/+7WxaKI6hxpgxZmJh"
+          href="https://t.me/+FZv49DSqQ_lmODcx"
           className="hover:text-gold-300 transition-colors"
         >
           Chatroom
@@ -34,7 +34,7 @@ export const Footer = () => {
       </div>
 
       <p className="text-white/15 text-[10px] tracking-[0.25em] uppercase font-sans">
-        © 2026 Lust Playhouse · Secure Nodes Active · LUSTPLAYHOUSE.FUN
+        © 2026 Lust Playhouse · Secure Nodes Active · LUSTPLAYHOUSE.XYZ
       </p>
     </footer>
   );
