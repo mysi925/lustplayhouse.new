@@ -32,7 +32,7 @@ export const MainContent = () => {
 
       {/* ── VIDEO PREVIEWS ── */}
       <section
-        id="preview"
+        id="previews"
         className="relative pt-4 pb-8 px-4 w-full overflow-hidden"
       >
         <HeroCarousel />
