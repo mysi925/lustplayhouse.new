@@ -22,14 +22,14 @@ const faqs = [
           href="https://t.me/cynski"
           className="text-gold-300 underline underline-offset-2 hover:text-gold-200"
         >
-          @cynski
+          https://t.me/savslayr
         </a>{" "}
         if you have any issues.
       </>
     ),
   },
   {
-    q: "What&#39;s the difference between tiers?",
+    q: "What's the;s the difference between tiers?",
     a: (
       <>
         Each tier unlocks more content and features.{" "}
