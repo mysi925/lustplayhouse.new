@@ -29,7 +29,7 @@ const faqs = [
     ),
   },
   {
-    q: "What's the;s the difference between tiers?",
+    q: "What's the difference between tiers?",
     a: (
       <>
         Each tier unlocks more content and features.{" "}
