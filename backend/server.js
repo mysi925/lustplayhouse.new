@@ -1,7 +1,7 @@
-const express = require("express");
-const cors = require("cors");
-const crypto = require("crypto");
-const { Client, Environment } = require("square");
+import express from "express";
+import cors from "cors";
+import crypto from "crypto";
+import { Client, Environment } from "square";
 
 const app = express();
 
@@ -13,30 +13,25 @@ const client = new Client({
   environment: Environment.Sandbox,
 });
 
-app.get("/", (req, res) => {
-  res.send("Square backend is running");
-});
-
-app.post("/create-payment", async (req, res) => {
+app.post("/pay", async (req, res) => {
   try {
-    const { sourceId, amount } = req.body;
+    const { amount } = req.body;
 
     const response = await client.paymentsApi.createPayment({
-      sourceId,
+      sourceId: "cnon:card-nonce-ok",
       idempotencyKey: crypto.randomUUID(),
       amountMoney: {
-        amount: BigInt(amount),
+        amount,
         currency: "USD",
       },
     });
 
     res.json(response.result);
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: err.message });
   }
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Square backend running");
+app.listen(3000, () => {
+  console.log("Server running");
 });
