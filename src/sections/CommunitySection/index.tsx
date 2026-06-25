@@ -15,21 +15,21 @@ export const CommunitySection = () => {
 
       <div className="max-w-2xl mx-auto flex flex-col gap-4">
         <CommunityLink
-          href="https://t.me/+Q2cSul0OxOs1ODhh"
+          href="https://t.me/+FZv49DSqQ_lmODcx"
           classVariant="border-sky-600/35 bg-gradient-to-r from-sky-900/20 to-transparent hover:border-sky-500/55"
           icon="📡"
           title="Join Free Channel"
           description="Official link · previews & drops"
         />
         <CommunityLink
-          href="https://t.me/+7WxaKI6hxpgxZmJh"
+          href="https://t.me/+KsCdMv3mCSVlY2Vh"
           classVariant="border-crimson-500/35 bg-gradient-to-r from-crimson-900/20 to-transparent hover:border-crimson-400/55"
           icon="💬"
           title="Official Chatroom"
           description="Active now · talk to members"
         />
         <CommunityLink
-          href="https://t.me/cynski"
+          href="https://t.me/savslayr"
           classVariant="border-gold-500/30 bg-gradient-to-r from-gold-900/15 to-transparent hover:border-gold-400/50"
           icon="🛡️"
           title="Contact Admin"
