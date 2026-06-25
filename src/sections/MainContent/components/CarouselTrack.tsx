@@ -1,18 +1,13 @@
 import React from "react";
 
 const videos = [
-  "/previews/4xbv-WKnt8AnuOf3.mp4",
-  "/previews/9FadNCpo2dS1ifsp.mp4",
-  "/previews/AICfQqgbU1UOG_DF.mp4",
-  "/previews/e_YxxppnlpUgCbkf.mp4",
-  "/previews/GUfmO8UGHyTEyazm.mp4",
-  "/previews/preview1.mp4",
-  "/previews/preview2.mp4",
-  "/previews/preview3.mp4",
-  "/previews/preview4.mp4",
-  "/previews/preview5.mp4",
-  "/previews/preview6.mp4",
-  "/previews/preview7.mp4",
+  "/previews/video1.mp4",
+  "/previews/video2.mp4",
+  "/previews/video3.mp4",
+  "/previews/video4.mp4",
+  "/previews/video5.mp4",
+  "/previews/video6.mp4",
+
 ];
 
 export const CarouselTrack = () => {
